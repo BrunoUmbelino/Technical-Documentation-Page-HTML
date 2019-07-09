@@ -1,0 +1,51 @@
+
+header {
+    padding: 0.5em;
+    font-size: 1.8em;    
+}
+
+section {
+    padding: 1.5em;
+}
+
+p{
+    margin: 0.5em;
+}
+
+code {
+color: crimson;
+background-color: #f1f1f1;
+padding-left: 4px;
+padding-right: 4px;
+font-size: 110%;
+}
+
+code::before{
+    content: "<"
+}
+
+code::after{
+    content: ">"
+}
+
+span {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%;
+}
+
+.div-footer {
+    background-color: black;
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+
+.exemple {
+    width: auto;
+    background-color: white;
+    display: block;
+    margin: 1em 0 1em 0;
+}

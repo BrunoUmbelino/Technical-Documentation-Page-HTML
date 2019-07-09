@@ -1,0 +1,205 @@
+<html eng="US">
+
+<head>
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="../Technical Documentation Page/home.css">
+    <link rel="stylesheet" href="../Technical Documentation Page/layout.css">
+    <link rel="stylesheet" href="../Technical Documentation Page/nav.css">
+    <link rel="icon" href="https://image.freepik.com/free-icon/documents-symbol_318-52157.png">
+</head>
+
+<body>
+    <div class="div-container">
+        <div class="div-nav">
+            <nav id="navbar">
+                <header>HTML Introduction</header>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#What_is_HTML?">What is HTML?</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#HTML_Documents">HTML Documents</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#HTML_Headings">HTML Headings</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#HTML_Paragraphs">HTML Paragraphs</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#HTML_Links">HTML Links</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#HTML_Images">HTML Images</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#HTML_Buttons">HTML Buttons</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#HTML_Lists">HTML Lists</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="div-main">
+            <main id="main-doc">
+
+                <section id="What_is_HTML?" class="main-section">
+                    <header>What is HTML?</header>
+                    <article>
+                        <p>HTML is the standard markup language for creating Web pages.</p>
+                        <ul>
+                            <li>HTML stands for Hyper Text Markup Language</li>
+                            <li>HTML describes the structure of Web pages using markup</li>
+                            <li>HTML elements are the building blocks of HTML pages</li>
+                            <li>HTML elements are represented by tags</li>
+                            <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
+                            </li>
+                            <li>Browsers do not display the HTML tags, but use them to render the content of the page
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <hr>
+                <section id="HTML_Documents" class="main-section">
+                    <header>HTML Documents</header>
+                    <article>
+                        <p>All HTML documents must start with a document type declaration:
+                            <code>!DOCTYPE html</code>.
+                        </p>
+                        <p>The HTML document itself begins with <code>html</code> and ends with
+                            <code>/html</code>.
+                        </p>
+                        <p>The visible part of the HTML document is between <code>body</code> and
+                            <code>/body</code>.
+                        </p>
+                        <div class="exemple">
+                            <p>Exemple: </p>
+                            <pre>
+    <code>!DOCTYPE html</code>
+    <code>html</code>
+        <code>head</code>
+            <code>title</code>Page Title<code>/title</code>
+        <code>/head</code>
+        <code>body</code>                
+            <code>h1</code>My First Heading<code>/h1</code>
+            <code>p</code>My first paragraph.<code>/p</code>                            
+        <code>/body</code>
+    <code>/html</code> 
+                            </pre>
+                        </div>
+                    </article>
+                </section>
+                <hr>
+
+                <section id="HTML_Headings" class="main-section">
+                    <header>HTML Headings</header>
+                    <article>
+                        <p>HTML headings are defined with the <code>h1</code> to <code>h6</code> tags.</p>
+                        <p><code>h1</code> defines the most important heading. <code>h6</code> defines the least
+                            important heading.</p>
+                        <div class="exemple">
+                            <p>Exemple: </p>
+                        <pre>
+    <code>h1</code>Heading 1<code>/h1</code>
+    <code>h2</code>Heading 2<code>/h2</code>
+    <code>h3</code>Heading 3<code>/h3</code>
+                        </pre>
+                        </div>
+                    </article>
+                </section>
+                <hr>
+
+                <section id="HTML_Paragraphs" class="main-section">
+                    <header>HTML Paragraphs</header>
+                    <article>
+                        <p>HTML paragraphs are defined with the <code>p</code> tag.</p>
+                    </article>
+                    <div class="exemple">
+                        <p>Exemple: </p>
+                        <pre>
+    <code>p</code>This is a paragraph.<code>/p</code>
+    <code>p</code>This is another paragraph.<code>/p</code>                         
+                        </pre>
+                    </div>
+                </section>
+                <hr>
+
+                <section id="HTML_Links" class="main-section">
+                    <header>HTML Links</header>
+                    <article>
+                        <p>HTML links are defined with the <code>a</code> tag.</p>
+                        <p>The link's destination is specified in the href attribute. </p>
+                        <p>Attributes are used to provide additional information about HTML elements.</p>
+                        <p>You will learn more about attributes in a later chapter.</p>
+                        <div class="exemple">
+                            <p>Exemple: </p>
+                            <pre>
+    <code>a</code> href="https://www.w3schools.com">This is a link<code>/a</code>                           
+                            </pre>
+                        </div>
+                    </article>
+                </section>
+                <hr>
+
+                <section id="HTML_Images" class="main-section">
+                    <header>HTML Images</header>
+                    <article>
+                        <p>HTML images are defined with the <code>img</code> tag.</p>
+                        <p>The source file (<span>src</span>), alternative text (<span>alt</span>), <span>width</span>,
+                            and <span>height</span> are provided as attributes.</p>
+                            <div class="exemple">
+                                <p>Exemple: </p>
+                                <pre>
+    <code>img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"</code>                        
+                                </pre>
+                            </div>
+                    </article>
+                </section>
+                <hr>
+
+                <section id="HTML_Buttons" class="main-section">
+                    <header>HTML Buttons</header>
+                    <article>
+                        <p>HTML buttons are defined with the <code>button</code> tag.</p>
+                        <div class="exemple">
+                            <p>Exemple: </p>
+                            <pre>
+    <code>button</code>Click me<code>/button</code>                       
+                            </pre>
+                        </div>
+                    </article>
+                </section>
+                <hr>
+
+                <section id="HTML_Lists" class="main-section">
+                    <header>HTML Lists</header>
+                    <article>
+                        <p>HTML lists are defined with the <code>ul</code> (unordered/bullet list) or the
+                            <code>ol</code> (ordered/numbered list) tag, followed by <code>li</code> tags (list
+                            items).
+                        </p>
+                        <div class="exemple">
+                            <p>Exemple: </p>
+                            <pre>
+    <code>ul</code>
+        <code>li</code>Coffee<code>/li</code>
+        <code>li</code>Tea<code>/li</code>
+        <code>li</code>Milk<code>/li</code>
+    <code>/ul</code>                       
+                            </pre>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+        <div class="div-footer">
+            <footer>
+                <p> Copyright 2019.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

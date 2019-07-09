@@ -1,0 +1,38 @@
+.div-container {
+    width: 100%;
+    min-height: 320px;
+    display: grid;
+    grid-template-areas: 
+    "div-nav div-main"
+    "div-footer div-footer";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: minmax(auto, 1fr) 4fr;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.div-nav {
+    grid-area: "div-nav";
+}
+
+.div-main {
+    grid-area: "div-main";
+    width: 80%;
+    margin: auto;
+}
+
+.div-footer {
+    grid-area: "div-footer";
+}
+
+@media (max-width:350px){
+    .div-container {
+       font-size: 14px;
+    }    
+
+    .div-main {
+        grid-area: "div-main";
+        width: 100%;
+    }
+}
