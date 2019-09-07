@@ -2,7 +2,7 @@
     background-color: teal;
     color: white;
     list-style-type: none;
-    position: sticky;
+    position: fixed;
 }
 
 #navbar header{

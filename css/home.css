@@ -38,9 +38,9 @@ span {
 
 .div-footer {
     background-color: black;
-    padding: 1em;
+    padding: 0.5em;
     color: white;
-    text-align: center;
+    text-align: right;
 }
 
 .exemple {
