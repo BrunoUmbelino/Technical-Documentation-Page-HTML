@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.div-container {
+    display: grid;
+    width: 100%;
+    min-height: 320px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(0, 0%, 90%);
+    font-size: 16px;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "nav main"
+    "nav footer";
+}
+
+.div-main {
+    grid-area: main;
+    width: 80%;
+    margin: auto;
+}
+
+.div-nav {
+    grid-area: nav;
+    position: fixed;
+}
+
+.div-footer {
+    grid-area: footer;
+    margin-left: -80px;
+}
