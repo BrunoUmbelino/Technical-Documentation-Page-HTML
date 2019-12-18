@@ -1,51 +1,88 @@
 
-header {
-    padding: 0.5em;
-    font-size: 1.8em;    
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-section {
-    padding: 1.5em;
+.div-container {
+    display: grid;
+    width: 100%;
+    min-height: 320px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(0, 0%, 90%);
+    font-size: 16px;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "nav main"
+    "nav footer";
 }
 
-p{
-    margin: 0.5em;
+.div-main {
+    grid-area: main;
+    width: 80%;
+    margin: auto;
 }
 
-code {
+.main-section h3 {
+    padding: 0.5rem;
+    font-size: 1.8rem;    
+}
+
+.main-section {
+    padding: 1.5rem;
+}
+
+.main-section p{
+    margin: .5rem;
+}
+
+.main-section code {
 color: crimson;
 background-color: #f1f1f1;
-padding-left: 4px;
-padding-right: 4px;
-font-size: 110%;
+padding: .1rem;
+font-size: 1.1rem;
 }
 
-code::before{
+.main-section code::before{
     content: "<"
 }
 
-code::after{
+.main-section code::after{
     content: ">"
 }
 
-span {
-    color: crimson;
+.main-section span {
+    color: darkorange;
     background-color: #f1f1f1;
-    padding-left: 4px;
-    padding-right: 4px;
-    font-size: 110%;
+    padding: .1rem;
+    font-size: 1.1rem;
+}
+
+
+.main-section .exemple {
+    width: auto;
+    background-color: white;
+    margin: 1rem;
+    padding: .5rem;
 }
 
 .div-footer {
+    grid-area: footer;
     background-color: black;
-    padding: 0.5em;
+    padding: 1rem;
     color: white;
     text-align: right;
 }
 
-.exemple {
-    width: auto;
-    background-color: white;
-    display: block;
-    margin: 1em 0 1em 0;
+@media (max-width:350px){
+    .div-container {
+       font-size: 14px;
+    }    
+
+    .div-main {
+        grid-area: "div-main";
+        width: 100%;
+    }
 }
